@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV ChargeFinder</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+
+  </head>
+  <body class="bg-white text-gray-900 font-['Plus_Jakarta_Sans',sans-serif] overflow-x-hidden">
+    <div class="sticky top-0 z-50 px-4 sm:px-5 pt-4 sm:pt-5">
+      <nav class="rounded-[2.5rem] shadow-sm bg-white/95 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <div class="flex items-center justify-between h-16 lg:h-20">
+            <a href="#" class="flex items-center flex-shrink-0">
+              <img src="image/Frame 2131331405.png" alt="EV ChargeFinder" class="h-8 sm:h-9" />
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+              <a href="#home" class="text-sm font-medium text-gray-700 hover:text-green-500 transition-colors">Home</a>
+              <a href="#features" class="text-sm font-medium text-gray-700 hover:text-green-500 transition-colors">Features</a>
+              <a href="#how-it-works" class="text-sm font-medium text-gray-700 hover:text-green-500 transition-colors">How It Works</a>
+              <a href="#app-preview" class="text-sm font-medium text-gray-700 hover:text-green-500 transition-colors">App Preview</a>
+              <a href="#testimonials" class="text-sm font-medium text-gray-700 hover:text-green-500 transition-colors">Testimonials</a>
+            </div>
+              <a href="#" class="hidden lg:inline-flex items-center px-6 py-2.5 bg-[#3BD37E] hover:opacity-90 rounded-lg text-white text-sm font-semibold transition-all">
+              Get Started
+            </a>
+            <label for="menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+              <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </label>
+          </div>
+          <div class="lg:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out peer-checked:max-h-[500px]">
+            <div class="flex flex-col gap-3 pt-2 pb-4">
+              <a href="#home" class="text-sm font-medium text-gray-700 hover:text-green-500 py-2 transition-colors">Home</a>
+              <a href="#features" class="text-sm font-medium text-gray-700 hover:text-green-500 py-2 transition-colors">Features</a>
+              <a href="#how-it-works" class="text-sm font-medium text-gray-700 hover:text-green-500 py-2 transition-colors">How It Works</a>
+              <a href="#app-preview" class="text-sm font-medium text-gray-700 hover:text-green-500 py-2 transition-colors">App Preview</a>
+              <a href="#testimonials" class="text-sm font-medium text-gray-700 hover:text-green-500 py-2 transition-colors">Testimonials</a>
+              <a href="#" class="inline-flex items-center justify-center px-6 py-2.5 bg-[#3BD37E] hover:opacity-90 rounded-lg text-white text-sm font-semibold transition-all mt-2">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section id="home" class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pt-8 md:pt-12 lg:pt-14">
+          <div class="flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[3.2rem] xl:text-[3.8rem] font-bold leading-tight">
+              Charge Your EV<br/>
+              <span class="bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent font-bold">Anywhere, Anytime</span>
+            </h1>
+            <p class="mt-4 text-gray-500 text-sm sm:text-base leading-relaxed max-w-md mx-auto sm:mx-0">
+              Discover nearby charging stations, book instantly,
+              and power your journey with real-time availability
+              and smart navigation.
+            </p>
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 mt-7">
+              <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-[#3BD37E] hover:opacity-90 text-white text-sm font-semibold rounded-full transition-all shadow-lg shadow-green-300/30">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+                </svg>
+                Download Now
+              </a>
+              <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 text-sm font-semibold rounded-full transition-all">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                Watch Demo
+              </a>
+            </div>
+          </div>
+          <div class="relative flex items-start justify-center lg:justify-end mt-6 lg:mt-0">
+            <div class="relative w-52 sm:w-60 md:w-64 lg:w-72 xl:w-80">
+              <div class="bg-[#1B3A2D] rounded-2xl sm:rounded-3xl w-full aspect-[5/4] relative overflow-hidden">
+                <svg class="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 400 320" fill="none">
+                  <path d="M-50 100C50 30 150 180 250 100S450 0 550 80" stroke="#4CAF50" stroke-width="1.5" />
+                  <path d="M-50 170C50 100 150 250 250 170S450 70 550 150" stroke="#4CAF50" stroke-width="1.5" />
+                  <path d="M-50 240C50 170 150 320 250 240S450 140 550 220" stroke="#4CAF50" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 w-[58%] sm:w-[55%] z-10">
+                <img src="image/Home 1.png" alt="App Preview" class="w-full rounded-xl sm:rounded-2xl shadow-2xl" />
+              </div>
+              <div class="h-24 sm:h-32 md:h-40 lg:h-48"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative mt-2 sm:mt-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="absolute top-0 sm:top-4 left-[40%] sm:left-[38%] lg:left-[42%] z-20 animate-float-slow hidden sm:flex">
+            <div class="bg-white rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-gray-500 font-medium">Network Coverage</p>
+                <p class="text-lg font-bold text-gray-900 leading-tight">10,000+</p>
+                <p class="text-[10px] text-gray-400">Charging Points</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute top-0 sm:top-4 right-4 sm:right-8 lg:right-28 z-20 animate-float hidden sm:block">
+            <div class="bg-[#3BD37E] text-white px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-lg">
+              <svg class="w-3.5 h-3.5 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              Top-rated app
+            </div>
+          </div>
+          <div class="absolute bottom-16 sm:bottom-20 left-2 sm:left-6 lg:left-10 z-20 animate-float">
+            <div class="bg-white rounded-2xl shadow-xl px-4 sm:px-5 py-3 sm:py-4 text-center">
+              <div class="w-10 h-10 bg-blue-100 rounded-xl mx-auto mb-2 flex items-center justify-center">
+                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2" stroke-width="2" />
+                  <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </div>
+              <p class="text-sm font-bold text-gray-900">Download Free</p>
+              <p class="text-[10px] text-gray-400 mt-0.5">iOS & Android</p>
+              <div class="flex items-center justify-center gap-0.5 mt-1.5">
+                <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-[10px] text-orange-500 font-semibold mt-1">4.8 Rating</p>
+            </div>
+          </div>
+          <div class="relative flex items-end justify-center -mt-4 sm:-mt-8 lg:pb-6">
+            <div class="w-full relative">
+              <img src="image/white-tesla-model-s-charging-charging-station_866987-14 1.png" alt="EV Car Charging" class="w-full h-auto" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+     <section id="features" class="py-16 sm:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center mb-12 sm:mb-16">
+          <!-- Features pill badge -->
+          <div class="inline-flex items-center mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">F</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">eatures</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-[2.8rem] font-bold text-gray-900 leading-tight">
+            Everything You need
+          </h2>
+          <h2 class="mt-3 text-3xl sm:text-4xl lg:text-[2.8rem] font-bold bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent mt-1 leading-tight">
+            All in One place
+          </h2>
+          <p class="mt-4 text-gray-400 text-sm sm:text-base max-w-md mx-auto">
+            Advanced features designed to make EV charging effortless and efficient
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 md:grid md:[grid-template-columns:5fr_3fr_3fr] md:[grid-template-rows:auto_auto_auto] md:gap-4 lg:gap-6">
+<div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[340px] sm:min-h-[400px] md:min-h-0 md:h-[460px] lg:h-[580px] bg-[#F0ECFB] md:[grid-column:1/2] md:[grid-row:1/3]">
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">Real-Time Availability</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[220px]">Live updates on station availability and wait times</p>
+            </div>
+            <img src="image/Group (1).png" alt="Real-Time Availability" class="absolute object-contain bottom-2 left-[5%] w-[42%] h-auto md:bottom-auto md:top-[150px] md:left-[20px] md:w-[150px] md:h-[230px] lg:top-[163px] lg:left-[px] lg:w-[258px] lg:h-[303px]" />
+            <img src="image/hand.png" alt="Hand with phone" class="absolute object-contain bottom-0 right-0 w-[44%] h-auto md:bottom-auto md:top-[150px] md:w-[100px] md:h-[310px] lg:top-[169px] lg:left-[220px] lg:w-[250px] lg:h-[413px]" />
+          </div>
+   
+          <div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[200px] sm:min-h-[240px] md:min-h-0 md:h-[220px] lg:h-[278px] bg-[#FCDFE9] md:[grid-column:2/4] md:[grid-row:1/2]">
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">Smart Navigation</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[220px]">AI-powered routes optimized for your battery level</p>
+            </div>
+            <img src="image/Group 2.png" alt="Smart Navigation" class="absolute object-contain bottom-0 right-0 w-[55%] max-h-[150px] sm:w-[65%] sm:max-h-[190px] md:w-[190px] md:h-[180px] md:max-h-none lg:w-[340px] lg:h-[240px]" />
+          </div>
+
+
+          <div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[200px] sm:min-h-[240px] md:min-h-0 md:h-[220px] lg:h-[278px] bg-[#FEF7DB] md:[grid-column:2/3] md:[grid-row:2/3]">
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-gray-900">Session Tracking</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[200px]">Real-time monitoring of charging progress and stats</p>
+            </div>
+            <img src="image/g3.png" alt="Session Tracking" class="absolute object-contain bottom-0 left-1/2 -translate-x-1/2 w-[50%] max-h-[120px] sm:w-[55%] sm:max-h-[160px] md:w-[100px] md:h-[150px] lg:w-[180px] lg:h-[160px]" />
+          </div>
+
+      
+          <div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[200px] sm:min-h-[240px] md:min-h-0 md:h-[220px] lg:h-[278px] bg-[#FDE9DD] md:[grid-column:3/4] md:[grid-row:2/3]">
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-gray-900">Digital Payments</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[180px]">Secure booking and contactless payments in-app</p>
+            </div>
+            <img src="image/g4.png" alt="Digital Payments" class="absolute object-contain bottom-0 right-0 w-[55%] max-h-[120px] sm:w-[60%] sm:max-h-[160px] md:w-[140px] md:h-[125px] md:max-h-none lg:w-[200px] lg:h-[160px]" />
+          </div>
+
+         
+          <div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[200px] sm:min-h-[240px] md:min-h-0 md:h-[220px] lg:h-[278px] bg-[#FDE9DD] md:[grid-column:1/2] md:[grid-row:3/4]">
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">Low Battery Alerts</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[200px]">Smart notifications before you need to charge</p>
+            </div>
+            <img src="image/g5.png" alt="Low Battery Alerts" class="absolute object-contain bottom-0 right-4 w-[52%] max-h-[160px] sm:w-[58%] sm:max-h-[210px] md:w-[140px] md:h-[160px] md:max-h-none md:right-5 lg:w-[240px] lg:h-[220px] lg:right-8" />
+          </div>
+
+          
+          <div class="relative rounded-[24px] overflow-hidden p-6 sm:p-8 min-h-[200px] sm:min-h-[240px] md:min-h-0 md:h-[220px] lg:h-[278px] bg-[#EEF2F5] md:[grid-column:2/4] md:[grid-row:3/4]">
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">Station Notifications</h3>
+              <p class="text-sm text-gray-500 mt-1.5 max-w-[220px]">Instant alerts on station status and pricing changes</p>
+            </div>
+            <img src="image/g7.png" alt="Station Notifications" class="absolute object-contain bottom-0 right-0 w-[55%] max-h-[160px] sm:w-[62%] sm:max-h-[210px] md:w-[190px] md:h-[150px] md:max-h-none lg:w-[280px] lg:h-[220px]" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="py-16 sm:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-1 mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">H</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">ow it works</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Get Charge In <span class="bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">3 Easy Steps</span>
+          </h2>
+          <p class="mt-4 text-gray-400 text-sm sm:text-base ">
+            From Finding a station to completing your charge, we've made it effortless
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-sm flex flex-col">
+            <div class="w-14 h-14 bg-[#EBFBF2] rounded-xl flex items-center justify-center ">
+              <img src="image/Frame (2).png">
+            </div>
+            <p class="text-sm font-semibold text-[#3BD37E] mb-1.5 mt-3">Find nearby charging points</p>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Locate Stations</h3>
+            <p class="text-sm sm:text-base text-gray-500 leading-relaxed">
+              Real-time map view shows all available stations with live availability status.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-sm flex flex-col">
+            <div class="w-14 h-14 bg-[#EBFBF2] rounded-xl flex items-center justify-center">
+             <img src="image/Frame (1).png">
+            </div>
+            <p class="text-sm font-semibold text-[#3BD37E] mb-5 mt-3">Reserve your spot</p>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Book Instantly</h3>
+            <p class="text-sm sm:text-base text-gray-500 leading-relaxed">
+              Navigate to your chosen station or reserve a charging spot with one tap
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-sm flex flex-col">
+            <div class="w-14 h-14 bg-[#EBFBF2] rounded-xl flex items-center justify-center ">
+              <img src="image/Frame.png" alt="" srcset="">
+            </div>
+            <p class="text-sm font-semibold text-[#3BD37E] mb-1.5 mt-3">Monitor in real-time</p>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Track & Charge</h3>
+            <p class="text-sm sm:text-base text-gray-500 leading-relaxed">
+              Track charging progress, time remaining, and manage payments seamlessly
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+ <section id="app-experience">
+      <div class="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20">
+
+        <div class="text-center mb-12 sm:mb-16">
+
+        <div class="inline-flex items-center mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">A</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">pp Experience</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Beautiful Design. <span class="bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">Intuitive Interface.</span>
+          </h2>
+          <p class="mt-4 text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+            Every detail crafted for the best user experience, with speed, clarity, and elegance
+          </p>
+        </div>
+        <div class="rounded-md flex flex-col items-center gap-5 py-2.5 px-1 sm:flex-row sm:overflow-x-scroll sm:overflow-y-hidden sm:scroll-smooth sm:snap-x sm:snap-mandatory sm:cursor-grab sm:active:cursor-grabbing scrollbar-hide">
+              <img src="image/Onboarding Screen.png" alt="App Screen - Charging" />
+             <img src="image/Login.png" alt="App Screen - Login"/>
+              <img src="image/Home.png" alt="App Screen - Home" />
+              <img src="image/View Details.png" alt="App Screen - Map" />
+              <img src="image/Book-confirmation.png" alt="App Screen - Booking"/>
+        </div>
+
+      </div>
+    </section>
+     <section class="py-16 sm:py-20 lg:py-24">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center mb-6">
+         <div class="inline-flex items-center gap-1 mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">W</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">hy Choose Us</span>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center leading-tight">
+          The Smartest Way to <span class="bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">Charge Your EV</span>
+        </h2>
+        <p class="mt-4 text-gray-400 text-sm sm:text-base text-center max-w-lg mx-auto">
+          Join 50,000+ drivers who've made the switch to smarter charging
+        </p>
+
+        <!-- 3 Cards -->
+        <div class="flex flex-col md:flex-row justify-between gap-5 mt-12 lg:mt-16">
+
+          <!-- Card 1 -->
+          <div class="relative w-full md:w-[410px] h-[410px] rounded-2xl border border-gray-200 overflow-hidden group">
+            <img src="image/img1.jpg" alt="Reduce Range Anxiety" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white border-t border-white/60 pt-2">Reduce Range Anxiety</h3>
+              <p class="mt-2 text-white/80 text-xs sm:text-sm leading-relaxed">
+                Never worry about running out of charge again. Find nearby EV charging stations instantly, plan smarter routes, and stay powered wherever the road takes you.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative w-full md:w-[410px] h-[410px] rounded-2xl border border-gray-200 overflow-hidden group">
+            <img src="image/img2.jpg" alt="Charge Smarter, Not Harder" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white border-t border-white/60 pt-2">Charge Smarter, Not Harder</h3>
+              <p class="mt-2 text-white/80 text-xs sm:text-sm leading-relaxed">
+                Intelligent routing and station recommendations in real time, optimized for your vehicle, battery level, and driving conditions for safer, smoother, longer EV journeys.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative w-full md:w-[410px] h-[410px] rounded-2xl border border-gray-200 overflow-hidden group">
+            <img src="image/img3.jpg" alt="Built for Modern EV Drivers" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white border-t border-white/60 pt-2">Built for Modern EV Drivers</h3>
+              <p class="mt-2 text-white/80 text-xs sm:text-sm leading-relaxed">
+                Designed with your needs in mind, every step of the journey, from planning to charging for a truly seamless EV experience worldwide, anytime, anywhere, without range anxiety.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="mt-12 lg:mt-16 rounded-2xl bg-gradient-to-r from-[#E8FBF2] via-[#E8F8FB] to-[#EEF4FF] py-10 px-6 sm:px-10">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <p class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">50K+</p>
+              <p class="mt-1 text-gray-500 text-sm">Active Users</p>
+            </div>
+            <div>
+              <p class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">10K+</p>
+              <p class="mt-1 text-gray-500 text-sm">Charging Stations</p>
+            </div>
+            <div>
+              <p class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">100K+</p>
+              <p class="mt-1 text-gray-500 text-sm">Charging Sessions</p>
+            </div>
+            <div>
+              <p class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">4.8★</p>
+              <p class="mt-1 text-gray-500 text-sm">App Rating</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+     <section class="py-16 sm:py-20 lg:py-24">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center mb-5">
+          <div class="inline-flex items-center gap-1 mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">T</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">estimonials</span>
+          </div>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center leading-tight">
+          Loved by <span class="bg-gradient-to-r from-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">50000+ Users</span>
+        </h2>
+        <p class="mt-3 text-gray-400 text-sm sm:text-base text-center">
+          See what our community has to say about their experience
+        </p>
+
+        <div class="group mt-10 sm:mt-14 relative">
+          <input type="radio" name="testimonial" id="slide1" class="hidden" checked />
+          <input type="radio" name="testimonial" id="slide2" class="hidden" />
+          <input type="radio" name="testimonial" id="slide3" class="hidden" />
+          <input type="radio" name="testimonial" id="slide4" class="hidden" />
+          <input type="radio" name="testimonial" id="slide5" class="hidden" />
+
+          <div>
+            <div class="overflow-hidden rounded-2xl">
+              <div class="flex transition-transform duration-500 ease-in-out group-has-[#slide1:checked]:translate-x-0 group-has-[#slide2:checked]:-translate-x-full group-has-[#slide3:checked]:translate-x-[-200%] group-has-[#slide4:checked]:translate-x-[-300%] group-has-[#slide5:checked]:translate-x-[-400%]">
+
+                <div class="min-w-full flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-sm">
+                  <div class="relative w-full sm:w-[42%] min-h-[280px] sm:min-h-[420px] bg-gray-300 shrink-0">
+                    <img src="image/man.jpg" alt="Jacob Jones" class="w-full h-full object-cover object-center absolute inset-0" />
+                    <div class="absolute bottom-0 left-0 right-0 flex gap-2 p-4">
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-black">Trips Completed</p>
+                        <p class="text-xl font-bold text-black">127</p>
+                      </div>
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-black">Total Saved</p>
+                        <p class="text-xl font-bold text-black">$340</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 bg-[#C8EDD8] p-6 sm:p-10 flex flex-col justify-center">
+                    <div class="absolute top-6 right-6 text-[80px] sm:text-[100px] font-serif leading-none text-[#a3d4b4] select-none ">"</div>
+                    <div class="flex gap-1 mb-4 relative z-10">
+                      <span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span>
+                    </div>
+                    <p class="text-gray-800 text-base sm:text-lg leading-relaxed relative z-10">
+                      "This app completely transformed my EV experience. I used to constantly worry about finding charging stations on long trips. Now, the intelligent route planner does all the thinking for me. The real-time availability feature is a game-changer!"
+                    </p>
+                    <div class="mt-5 flex items-center gap-2 relative z-10">
+                      <span class="font-bold text-gray-900">Jacob Jones</span>
+                      <span class="bg-white inline-flex items-center gap-1 border border-green-400 rounded-full px-2.5 py-0.5 text-xs text-gray-600">
+                        <svg class="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Verified
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1 relative z-10">Tesla Model 3 Owner</p>
+                    <p class="text-sm text-gray-400 relative z-10">San Francisco, CA</p>
+                    <label for="slide2" class="absolute bottom-6 right-6 w-10 h-10 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center text-white shadow-md hover:opacity-90 transition-opacity z-10 cursor-pointer">
+                      <img src="image/play.png" alt="" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="min-w-full flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-sm">
+                  <div class="relative w-full sm:w-[42%] min-h-[280px] sm:min-h-[420px] bg-gray-400 shrink-0">
+                    <img src="image/women1.avif" alt="Sarah Miller" class="w-full h-full object-cover object-center absolute inset-0" />
+                    <div class="absolute bottom-0 left-0 right-0 flex gap-2 p-4">
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Trips Completed</p>
+                        <p class="text-xl font-bold text-white">84</p>
+                      </div>
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Total Saved</p>
+                        <p class="text-xl font-bold text-white">$210</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 bg-[#C8EDD8] p-6 sm:p-10 flex flex-col justify-center">
+                    <div class="absolute top-6 right-6 text-[80px] sm:text-[100px] font-serif leading-none text-[#a3d4b4] select-none">"</div>
+                    <div class="flex gap-1 mb-4 relative z-10">
+                      <span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span>
+                    </div>
+                    <p class="text-gray-800 text-base sm:text-lg leading-relaxed relative z-10">
+                      "Finding a charging station has never been easier. The app's map is incredibly accurate and the booking system is seamless. I saved so much time on my last road trip. Highly recommend to every EV owner!"
+                    </p>
+                    <div class="mt-5 flex items-center gap-2 relative z-10">
+                      <span class="font-bold text-gray-900">Sarah Miller</span>
+                      <span class="bg-white inline-flex items-center gap-1 border border-green-400 rounded-full px-2.5 py-0.5 text-xs text-gray-600">
+                        <svg class="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Verified
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1 relative z-10">BMW iX Owner</p>
+                    <p class="text-sm text-gray-400 relative z-10">Austin, TX</p>
+                    <label for="slide3" class="absolute bottom-6 right-6 w-10 h-10 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center text-white shadow-md hover:opacity-90 transition-opacity z-10 cursor-pointer">
+                      <img src="image/play.png" alt="" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="min-w-full flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-sm">
+                  <div class="relative w-full sm:w-[42%] min-h-[280px] sm:min-h-[420px] bg-gray-500 shrink-0">
+                    <img src="image/man1.jpg" alt="David Chen" class="w-full h-full object-cover object-center absolute inset-0" />
+                    <div class="absolute bottom-0 left-0 right-0 flex gap-2 p-4">
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Trips Completed</p>
+                        <p class="text-xl font-bold text-white">203</p>
+                      </div>
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Total Saved</p>
+                        <p class="text-xl font-bold text-white">$512</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 bg-[#C8EDD8] p-6 sm:p-10 flex flex-col justify-center">
+                    <div class="absolute top-6 right-6 text-[80px] sm:text-[100px] font-serif leading-none text-[#a3d4b4] select-none">"</div>
+                    <div class="flex gap-1 mb-4 relative z-10">
+                      <span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span>
+                    </div>
+                    <p class="text-gray-800 text-base sm:text-lg leading-relaxed relative z-10">
+                      "As someone who drives over 500 miles a week, this app is essential. The low-battery alerts and smart routing have completely eliminated my range anxiety. Best investment I've made for my EV lifestyle!"
+                    </p>
+                    <div class="mt-5 flex items-center gap-2 relative z-10">
+                      <span class="font-bold text-gray-900">David Chen</span>
+                      <span class="bg-white inline-flex items-center gap-1 border border-green-400 rounded-full px-2.5 py-0.5 text-xs text-gray-600">
+                        <svg class="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Verified
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1 relative z-10">Rivian R1T Owner</p>
+                    <p class="text-sm text-gray-400 relative z-10">Seattle, WA</p>
+                    <label for="slide4" class="absolute bottom-6 right-6 w-10 h-10 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center text-white shadow-md hover:opacity-90 transition-opacity z-10 cursor-pointer">
+                      <img src="image/play.png" alt="" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="min-w-full flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-sm">
+                  <div class="relative w-full sm:w-[42%] min-h-[280px] sm:min-h-[420px] bg-gray-600 shrink-0">
+                    <img src="image/women2.jpg" alt="Emma Wilson" class="w-full h-full object-cover object-center absolute inset-0" />
+                    <div class="absolute bottom-0 left-0 right-0 flex gap-2 p-4">
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Trips Completed</p>
+                        <p class="text-xl font-bold text-white">56</p>
+                      </div>
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Total Saved</p>
+                        <p class="text-xl font-bold text-white">$145</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 bg-[#C8EDD8] p-6 sm:p-10 flex flex-col justify-center">
+                    <div class="absolute top-6 right-6 text-[80px] sm:text-[100px] font-serif leading-none text-[#a3d4b4] select-none">"</div>
+                    <div class="flex gap-1 mb-4 relative z-10">
+                      <span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span>
+                    </div>
+                    <p class="text-gray-800 text-base sm:text-lg leading-relaxed relative z-10">
+                      "The digital payment system is so convenient. I no longer need to worry about carrying cards or cash at charging stations. The app handles everything seamlessly. A must-have for every EV driver!"
+                    </p>
+                    <div class="mt-5 flex items-center gap-2 relative z-10">
+                      <span class="font-bold text-gray-900">Emma Wilson</span>
+                      <span class="bg-white inline-flex items-center gap-1 border border-green-400 rounded-full px-2.5 py-0.5 text-xs text-gray-600">
+                        <svg class="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Verified
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1 relative z-10">Chevy Bolt Owner</p>
+                    <p class="text-sm text-gray-400 relative z-10">Chicago, IL</p>
+                    <label for="slide5" class="absolute bottom-6 right-6 w-10 h-10 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center text-white shadow-md hover:opacity-90 transition-opacity z-10 cursor-pointer">
+                      <img src="image/play.png" alt="" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="min-w-full flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-sm">
+                  <div class="relative w-full sm:w-[42%] min-h-[280px] sm:min-h-[420px] bg-gray-700 shrink-0">
+                    <img src="image/man2.jpg" alt="Michael Brown" class="w-full h-full object-cover object-center absolute inset-0" />
+                    <div class="absolute bottom-0 left-0 right-0 flex gap-2 p-4">
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Trips Completed</p>
+                        <p class="text-xl font-bold text-white">341</p>
+                      </div>
+                      <div class="flex-1 bg-white/30 backdrop-blur-md border border-white/60 rounded-xl px-4 py-3">
+                        <p class="text-[10px] text-gray-200">Total Saved</p>
+                        <p class="text-xl font-bold text-white">$780</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 bg-[#C8EDD8] p-6 sm:p-10 flex flex-col justify-center">
+                    <div class="absolute top-6 right-6 text-[80px] sm:text-[100px] font-serif leading-none text-[#a3d4b4] select-none">"</div>
+                    <div class="flex gap-1 mb-4 relative z-10">
+                      <span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span><span class="text-yellow-400 text-xl">★</span>
+                    </div>
+                    <p class="text-gray-800 text-base sm:text-lg leading-relaxed relative z-10">
+                      "I've been using this app for over a year and it just keeps getting better. The station notifications are spot-on and the session tracking helps me plan my budget perfectly. Simply the best EV app out there!"
+                    </p>
+                    <div class="mt-5 flex items-center gap-2 relative z-10">
+                      <span class="font-bold text-gray-900">Michael Brown</span>
+                      <span class="bg-white inline-flex items-center gap-1 border border-green-400 rounded-full px-2.5 py-0.5 text-xs text-gray-600">
+                        <svg class="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Verified
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1 relative z-10">Ford Mustang Mach-E Owner</p>
+                    <p class="text-sm text-gray-400 relative z-10">New York, NY</p>
+                    <label for="slide1" class="absolute bottom-6 right-6 w-10 h-10 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center text-white shadow-md hover:opacity-90 transition-opacity z-10 cursor-pointer">
+                      <img src="image/play.png" alt="" />
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-4 mt-8">
+              <div class="relative w-10 h-10">
+                <label for="slide5" class="hidden group-has-[#slide1:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </label>
+                <label for="slide1" class="hidden group-has-[#slide2:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </label>
+                <label for="slide2" class="hidden group-has-[#slide3:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </label>
+                <label for="slide3" class="hidden group-has-[#slide4:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </label>
+                <label for="slide4" class="hidden group-has-[#slide5:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </label>
+              </div>
+
+              <div class="flex gap-2 items-center">
+                <label for="slide1" class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer group-has-[#slide1:checked]:w-6 group-has-[#slide1:checked]:bg-[#00D3F2]"></label>
+                <label for="slide2" class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer group-has-[#slide2:checked]:w-6 group-has-[#slide2:checked]:bg-[#00D3F2]"></label>
+                <label for="slide3" class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer group-has-[#slide3:checked]:w-6 group-has-[#slide3:checked]:bg-[#00D3F2]"></label>
+                <label for="slide4" class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer group-has-[#slide4:checked]:w-6 group-has-[#slide4:checked]:bg-[#00D3F2]"></label>
+                <label for="slide5" class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer group-has-[#slide5:checked]:w-6 group-has-[#slide5:checked]:bg-[#00D3F2]"></label>
+              </div>
+
+              <div class="relative w-10 h-10">
+                <label for="slide2" class="hidden group-has-[#slide1:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </label>
+                <label for="slide3" class="hidden group-has-[#slide2:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </label>
+                <label for="slide4" class="hidden group-has-[#slide3:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </label>
+                <label for="slide5" class="hidden group-has-[#slide4:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </label>
+                <label for="slide1" class="hidden group-has-[#slide5:checked]:flex absolute inset-0 w-10 h-10 rounded-full border border-gray-300 bg-white items-center justify-center hover:border-gray-400 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+     <section id="download" class="py-16 sm:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+     
+        <div class="relative rounded-3xl px-6 sm:px-12 lg:px-16 py-16 sm:py-20 lg:py-24 text-center overflow-hidden bg-cover bg-center" style="background-image: url('image/download.png')">
+          <div class="absolute inset-0" style="background-color: rgba(78, 223, 124, 0.8);"></div>
+
+          <div class="relative z-10">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Download the EV Station Finder App
+            </h2>
+            <p class="mt-4 sm:mt-5 text-white/80 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
+              Join thousands of EV drivers who charge smarter with our app, saving time, money, and energy every day
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-8 sm:mt-10">
+   
+              <a href="#" class="inline-flex items-center gap-3 bg-gray-900 text-white rounded-xl px-5 py-3 hover:bg-black transition-colors">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.18 2.04C3.06 2.16 3 2.35 3 2.59v18.82c0 .24.06.43.18.55l.03.03L13.4 12.4v-.08L3.21 2.01l-.03.03z" fill="#4285F4"/>
+                  <path d="M16.81 15.81l-3.41-3.41v-.08l3.41-3.41.08.04 4.04 2.29c1.15.65 1.15 1.72 0 2.38l-4.04 2.29-.08.04v-.14z" fill="#FBBC04"/>
+                  <path d="M16.89 15.67L13.4 12.18 3.18 22.41c.38.4 1.01.45 1.73.05l11.98-6.79z" fill="#EA4335"/>
+                  <path d="M16.89 8.65L4.91 1.86C4.19 1.46 3.56 1.51 3.18 1.91l10.22 10.27 3.49-3.53z" fill="#34A853"/>
+                </svg>
+                <div class="text-left">
+                  <div class="text-[10px] uppercase tracking-wide opacity-80">Get it on</div>
+                  <div class="text-base font-semibold leading-tight">Google Play</div>
+                </div>
+              </a>
+              <a href="#" class="inline-flex items-center gap-3 bg-gray-900 text-white rounded-xl px-5 py-3 hover:bg-black transition-colors">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="white">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <div class="text-left">
+                  <div class="text-[10px] uppercase tracking-wide opacity-80">Download on the</div>
+                  <div class="text-base font-semibold leading-tight">App Store</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+<section class="max-w-[1100px] mx-auto px-6 py-24">
+
+  <div class="flex justify-center mb-6">
+    <div class="inline-flex items-center gap-1 mb-6">
+            <div class="p-4 w-5 h-5 bg-gradient-to-r from-[#00D492] via-[#00D3F2] to-[#51A2FF] rounded-full flex items-center justify-center">
+              <span class="text-black text-[16px] font-bold">F</span>
+            </div>
+            <span class="text-[16px] font-bold text-black">requently Asked Questions</span>
+          </div>
+  </div>
+
+  <div class="text-center mb-16">
+    <h2 class="text-4xl lg:text-5xl font-extrabold tracking-tight">
+      Everything You 
+      <span class="bg-gradient-to-r from-[#00D3F2] to-[#51A2FF] bg-clip-text text-transparent">
+        Need to Know
+      </span>
+    </h2>
+    <p class="mt-5 text-gray-400 text-lg">
+      Find answers to common EV charging concerns quickly and easily
+    </p>
+  </div>
+
+  <div class="flex flex-col gap-4">
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">01</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            I just got my electric vehicle and I need to know where I can charge it. Can the app show me all available stations nearby in real time?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500 text-base">
+        Yes, the app provides real-time updates on all available charging stations near your location.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">02</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            I want to ensure that a charging station will be available when I arrive. Is it possible to reserve a slot in advance to avoid waiting?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Yes, reservations can be made in advance depending on station availability.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">03</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            Can I browse stations without registering? Which features require creating an account to access them?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Browsing is available without registration, but booking and tracking require an account.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">04</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            I want to avoid running out of battery unexpectedly while driving. Can the app notify me when my battery is low or when a charging session starts or ends?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Yes, the app can send notifications for battery status and charging sessions.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">05</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            Do I need to pay to use the basic app features or to search for stations? Are there any additional costs or hidden charges I should be aware of?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Basic features are free. Charges only apply when using paid charging services.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">06</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            Once I plug in my EV, I want to monitor how fast it is charging. Does the app provide live updates on battery percentage and estimated time remaining?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Yes, live updates show battery percentage and estimated charging time.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">07</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            I own more than one electric vehicle and want to track charging for each car. Can the app handle multiple vehicles and show separate charging details for each?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        Yes, multiple vehicles can be added and managed separately.
+      </div>
+    </details>
+
+    <details class="group bg-white shadow-sm border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between px-8 py-8 cursor-pointer list-none">
+        <div class="flex items-start gap-8">
+          <span class="text-3xl font-bold text-gray-300 lg:text-4xl">08</span>
+          <span class="text-sm font-medium text-black-900 max-w-[800px] lg:text-lg">
+            What should I do if a charging station is not working or if I encounter a problem with the app? Can I reach customer support quickly and easily?
+          </span>
+        </div>
+        <span class="text-xl text-black group-open:rotate-45 transition lg:text-2xl">+</span>
+      </summary>
+      <div class="px-20 pb-8 text-gray-500">
+        You can report issues directly within the app or contact support anytime.
+      </div>
+    </details>
+
+  </div>
+
+</section>
+<footer class="bg-[#0F172B] max-w-[1400px] mx-auto px-6 lg:px-20 pt-20 pb-10 text-white">
+  <div class="grid lg:grid-cols-3 gap-16">
+    <div>
+      <div class="flex items-center gap-3">
+       <img src="image/footer logo.png" alt="" srcset="">
+      </div>
+      <p class="mt-6 text-gray-300 text-lg leading-relaxed max-w-md">
+        The modern solution for EV drivers. Find, book,
+        and charge at thousands of stations worldwide.
+      </p>
+      <div class="mt-8 space-y-4 text-gray-300 text-lg">
+        <div class="flex items-center gap-3">
+          <span>✉</span>
+          <span>hello.naasmind@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>📞</span>
+          <span>01772–337656</span>
+        </div>
+      </div>
+      <div class="flex gap-4 mt-8">
+        <div class="w-12 h-12 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/10 transition">f</div>
+        <div class="w-12 h-12 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/10 transition">◎</div>
+        <div class="w-12 h-12 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/10 transition">in</div>
+        <div class="w-12 h-12 rounded-xl border border-white/20 flex items-center justify-center hover:bg-white/10 transition">X</div>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+      <ul class="space-y-5 text-gray-300 text-lg">
+        <li class="hover:text-white transition cursor-pointer">Home</li>
+        <li class="hover:text-white transition cursor-pointer">Features</li>
+        <li class="hover:text-white transition cursor-pointer">How It Works</li>
+        <li class="hover:text-white transition cursor-pointer">App Preview</li>
+        <li class="hover:text-white transition cursor-pointer">Testimonials</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-6">Stay Updated</h3>
+      <p class="text-gray-300 text-lg max-w-sm leading-relaxed">
+        Get the latest updates on new features
+        and charging stations.
+      </p>
+      <div class="mt-6 flex gap-2">
+        <input
+          type="email"
+          placeholder="Your email"
+          class="w-full px-5 py-4 bg-[#1B2745] text-white rounded-xl border border-white/10 focus:outline-none placeholder-gray-400"
+        />
+        <button
+          class="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-[#2BD4B4] to-[#4DA3FF]">
+          Join
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div class="border-t border-white/10 mt-16 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-gray-400 text-lg">
+
+    <p>© 2026 Naas Ev Charge. All rights reserved.</p>
+
+    <div class="flex gap-10">
+      <span class="hover:text-white transition cursor-pointer">Privacy Policy</span>
+      <span class="hover:text-white transition cursor-pointer">Terms of Service</span>
+      <span class="hover:text-white transition cursor-pointer">Cookie Policy</span>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+</html>
